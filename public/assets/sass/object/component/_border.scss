@@ -1,0 +1,37 @@
+.c-border__2color {
+    background: repeating-linear-gradient(to right, $maincolor, $maincolor 90px, $subcolor 90px, $subcolor 180px);
+    height: 5px;
+}
+
+.c-border__maincolor {
+    background: $maincolor;
+    height: 4px;
+}
+
+.c-border__subcolor {
+    @extend .c-border__maincolor;
+    background: $subcolor;
+}
+
+.c-border__thirdcolor {
+    @extend .c-border__maincolor;
+    background: $thirdcolor;
+}
+
+.c-border__fifthcolor {
+    @extend .c-border__maincolor;
+    background: $fifthcolor;
+}
+
+.c-border__forcecolor {
+    @extend .c-border__maincolor;
+    background: $forcecolor;
+}
+
+.c-border__textunder {
+    display: inline;
+    &:hover {
+        padding-bottom: 0;
+        border-bottom: 1px solid $black;
+    }
+}

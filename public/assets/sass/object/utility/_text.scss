@@ -1,0 +1,81 @@
+/*
+#utility
+調整用
+*/
+
+.u-text__red {
+    color: $red;
+}
+
+.u-text__black {
+    color: $black;
+}
+
+.u-text__white {
+    color: $white;
+}
+
+.u-text__pink {
+    color: $pink;
+}
+
+.u-text__blue {
+    color: $blue;
+}
+
+.u-text__white {
+    color: $white;
+}
+
+.u-text__small {
+    font-size: $small;
+}
+
+.u-text__middle {
+    font-size: $middle;
+}
+
+.u-text__large {
+    font-size: $large;
+}
+
+.u-text__xlarge {
+    font-size: $x-large;
+}
+
+.u-text__xxlarge {
+    font-size: $xx-large;
+}
+
+.u-text__left {
+    text-align: left;
+}
+
+.u-text__right {
+    text-align: right;
+}
+
+.u-text__center {
+    text-align: center;
+}
+
+.u-text__h-center {
+    display: flex;
+    align-items: center;
+}
+
+.u-text__point {
+    font-size: $large;
+    @extend .webfont-bold;
+    padding-bottom: 1rem;
+    text-align: center;
+    span {
+        color: $red;
+        font-size: $x-large;
+    }
+}
+
+.u-text__sub {
+    text-align: center;
+    padding-bottom: 2rem;
+}

@@ -1,0 +1,226 @@
+        .p-archive__category {
+            max-width: 90%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto 5rem;
+            li {
+                width: 20%;
+                &.active {
+                    background-color: $lightpink;
+                }
+                a {
+                    height: 5rem;
+                    padding: 0 0.1rem;
+                    border: 1px solid $black;
+                    border-right: none;
+                    border-bottom: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &:nth-child(5n),
+                &:last-child {
+                    border-right: 1px solid $black;
+                }
+                &:nth-last-child(-n+5) {
+                    border-bottom: 1px solid $black;
+                }
+            }
+            @media screen and (max-width: $bp-middle) {
+                width: 80%;
+            }
+            @media screen and (max-width: $bp-small) {
+                width: 100%;
+                max-width: 100%;
+                margin-bottom: 3rem;
+                font-size: $small;
+                li {
+                    width: auto;
+                    border: 1px solid $black;
+                    border-right: none;
+                    display: inline;
+                    // padding: 1rem;
+                    a {
+                        height: 3rem;
+                        border: none;
+                        padding: 0 0.8rem;
+                        @media screen and (max-width: $bp-xsmall) {
+                            padding: 0 0.3rem;
+                        }
+                        // display: inline;
+                    }
+                }
+            }
+        }
+        
+        .p-archive__sort-wrap {
+            display: inline-flex;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            @media screen and (max-width: $bp-small) {
+                flex-flow: column;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        .p-archive__sort {
+            text-align: center;
+            font-size: $small;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            &.product {
+                margin-right: 3rem;
+                .active {
+                    background-color: $cream;
+                    padding: 1rem;
+                }
+                @media screen and (max-width: $bp-small) {
+                    margin-right: 0;
+                }
+            }
+            &.column {
+                @media screen and (max-width: $bp-small) {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: $bp-small) {
+                margin-bottom: 1rem;
+            }
+            li {
+                display: inline-block;
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+                cursor: pointer;
+                &:first-child {
+                    cursor: auto;
+                }
+                @media screen and (max-width: $bp-middle) {
+                    border-right: none;
+                    padding-right: 0;
+                    padding-left: 0;
+                    margin-right: 0.5rem;
+                    margin-left: 0.5rem;
+                }
+                &.active {
+                    background-color: $cream;
+                    padding: 0.8rem;
+                    margin-right: 0rem;
+                }
+                &:first-child {
+                    font-weight: bold;
+                    border-right: none;
+                    @media screen and (max-width: $bp-middle) {
+                        // margin-bottom: 1rem; // &:before,
+                        // &:after {
+                        //     font-family: "Font Awesome 5 Free";
+                        //     content: "\f069";
+                        //     font-size: 9px;
+                        //     padding: 4px;
+                        // }
+                    }
+                }
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+        
+        .p-archive__list {
+            padding: 0;
+            @media screen and (max-width: $bp-middle) {
+                padding: 0;
+            }
+        }
+        
+        .p-archive__column {
+            width: calc(25% - 3rem);
+            margin-right: 3rem;
+            // margin-bottom: 3rem;
+            margin-bottom: 2rem;
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+            @media screen and (max-width: $bp-middle) {
+                width: calc(33.3333% - 2rem);
+                margin-right: 2rem;
+                // margin-bottom: 3rem;
+                &:nth-child(4n) {
+                    margin-right: 2rem;
+                }
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+            @media screen and (max-width: $bp-small) {
+                width: 100%;
+                margin-right: 1.5rem;
+                margin-bottom: 1.5rem;
+                margin-left: -1.5rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:nth-child(3n) {
+                    margin-right: 1.5rem;
+                }
+                &:nth-child(4n) {
+                    margin-right: 1.5rem;
+                }
+            }
+            &.js-archive {
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                border-bottom: 1px solid $gray;
+                @media screen and (max-width: $bp-small) {
+                    flex-flow: column;
+                }
+                .image {
+                    width: 20%;
+                    margin-bottom: 1rem;
+                    @media screen and (max-width: $bp-small) {
+                        width: 100%;
+                    }
+                }
+                .c-card__image {
+                    padding: 0;
+                    width: 20rem;
+                    @media screen and (max-width: $bp-small) {
+                        width: 100%;
+                    }
+                }
+                .info {
+                    width: 60%;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: flex-start;
+                    padding: 2rem;
+                    padding-bottom: 0;
+                    p,
+                    ul {
+                        display: inline;
+                        text-align: left;
+                        padding-bottom: 2rem;
+                        li {
+                            padding: 0;
+                            padding-bottom: 1rem;
+                        }
+                    }
+                    @media screen and (max-width: $bp-small) {
+                        width: 100%;
+                    }
+                }
+                .button {
+                    padding-top: 2rem;
+                    width: 20%;
+                    @media screen and (max-width: $bp-small) {
+                        width: 100%;
+                    }
+                }
+            }
+        }

@@ -1,0 +1,86 @@
+                #js-headmenu {
+                    display: none;
+                }
+
+                .swiper-slide {
+                    img {
+                        border: 3px solid $white;
+                    }
+                }
+
+                .swiper-slide-next,
+                .swiper-slide-prev {
+                    opacity: 0.4;
+                }
+                /* fadeUp */
+
+                .swiper-container {
+                    display: flex;
+                    .swiper-slide {
+                        &.thumbnail-slide {
+                            width: 25%;
+                            margin-left: 2px;
+                            border: 3px solid $white;
+                            border-top: 3px solid $white;
+                            &::lastchild {
+                                padding-right: 0;
+                                border-right: none;
+                            }
+                            cursor: pointer;
+                            opacity:0.4;
+                            &.swiper-slide-active {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                .js-fadeUp {
+                    animation-name: fadeUpAnime;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: forwards;
+                    opacity: 0;
+                }
+
+                @keyframes fadeUpAnime {
+                    from {
+                        opacity: 0;
+                        transform: translateY(100px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+
+                .js-fadeUpTrigger {
+                    opacity: 0;
+                }
+
+                .swiper-container {
+                    width: 100%;
+                    //スライダー
+                    &.slider {
+                        height: 80vh;
+                    }
+                    //サムネイル
+                    &.slider-thumbnail {
+                        height: 20vh;
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                width: 25%;
+                                height: 100%;
+                                opacity: .5;
+                                overflow: hidden;
+                                &.swiper-slide-thumb-active {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .js-swiper .thumbnail .swiper-wrapper {
+                    margin-left: calc(-37.5% - 5px);
+                }

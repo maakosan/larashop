@@ -1,0 +1,30 @@
+.c-pan {
+    padding-bottom: 2rem;
+    li {
+        display: inline-block;
+        font-size: $small;
+        &:after {
+            padding-left: 0.5rem;
+            content: ">";
+            padding-right: 0.5rem;
+        }
+        &:last-child {
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid $black;
+            &:after {
+                padding-left: 0;
+                content: "";
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.c-pan__product {
+    @extend .c-pan;
+    padding-bottom: 1rem
+}
+
+.c-pan__product-wrap {
+    margin-bottom: 1rem;
+}

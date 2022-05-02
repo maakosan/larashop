@@ -1,0 +1,127 @@
+/*
+#utility
+調整用
+*/
+
+.u-a-slide-in {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.u-a-slide-in_inner {
+    display: inline-block;
+}
+
+
+/* 上下のアニメーション*/
+
+.u-a-upAnime {
+    opacity: 0;
+    /* 事前に透過0 にして消しておく*/
+}
+
+.u-a-slideAnimeDownUp {
+    animation-name: slideTextY100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY100 {
+    from {
+        transform: translateY(100%);
+        /* 要素を上の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        /* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+.u-a-slideAnimeUpDown {
+    animation-name: slideTextY-100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY-100 {
+    from {
+        transform: translateY(-100%);
+        /* 要素を下の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        /* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+
+/* 上下のアニメーション*/
+
+.u-a-downAnime {
+    opacity: 0;
+    /* 事前に透過0 にして消しておく*/
+}
+
+.u-a-slideAnimeDownUp {
+    animation-name: slideTextY100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY100 {
+    from {
+        transform: translateY(100%);
+        /* 要素を上の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        /* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+.u-a-slideAnimeUpDown {
+    animation-name: slideTextY-100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY-100 {
+    from {
+        transform: translateY(-100%);
+        /* 要素を下の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        /* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+.u-a-fadeRight {
+    animation-name: fadeRightAnime;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeRightAnime {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

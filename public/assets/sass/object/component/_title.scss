@@ -1,0 +1,224 @@
+        .c-title {
+            font-size: $xx-large;
+            @extend .webfont-title;
+            text-align: center;
+            letter-spacing: 0.1em;
+            padding-bottom: 4rem;
+            line-height: 1.8;
+            @media screen and (max-width: $bp-small) {
+                font-size: $large;
+                padding-bottom: 2rem;
+            }
+            span {
+                padding-top: 1rem;
+                display: block;
+                font-size: $small;
+                @extend .webfont;
+                &.red {
+                    color: $red;
+                    display: inline;
+                }
+            }
+        }
+        
+        .c-title__archive {}
+        
+        .c-title__maincolor {
+            font-size: $x-large;
+            letter-spacing: 0.2em;
+            text-align: center;
+            color: $maincolor;
+            @extend .webfont-title;
+            padding-bottom: 3rem;
+            @media screen and (max-width: $bp-middle) {
+                padding-bottom: 2rem;
+            }
+            @media screen and (max-width: $bp-small) {
+                font-size: $x-large;
+            }
+            text-align: center;
+            .inner {
+                position: relative;
+                display: inline-block;
+                padding: 0 2em;
+                text-align: center;
+                &:before,
+                &:after {
+                    position: absolute;
+                    width: 0;
+                    height: 51.95px;
+                    content: '';
+                    border-width: 0 0 0 2px;
+                    border-style: dotted;
+                    border-color: $maincolor;
+                }
+                &:before {
+                    transform: rotate(35deg);
+                    top: -10px;
+                    right: 10px;
+                }
+                &:after {
+                    transform: rotate(145deg);
+                    top: -10px;
+                    left: 10px;
+                }
+            }
+        }
+        
+        .c-title__mb-m {
+            @extend .c-title;
+            margin-bottom: 3rem;
+            padding-bottom: 0;
+        }
+        
+        .c-title__subcolor {
+            @extend .c-title__maincolor;
+            color: $subcolor;
+            .inner {
+                &:before,
+                &:after {
+                    border-color: $subcolor;
+                }
+            }
+        }
+
+        .c-title__deco {
+            @extend .webfont-bold;
+            text-align: center;
+            color: $maincolor;
+            font-size: $large;
+            padding-bottom: 3rem;
+            .inner {
+                position: relative;
+                display: inline-block;
+                padding: 0 2em;
+                text-align: center;
+                i {
+                    padding-left: 0.3rem;
+                }
+                &:before,
+                &:after {
+                    position: absolute;
+                    width: 0;
+                    height: 51.95px;
+                    content: '';
+                    border-width: 0 0 0 2px;
+                    border-style: dotted;
+                    border-color: $maincolor;
+                }
+                &:before {
+                    transform: rotate(35deg);
+                    top: -10px;
+                    right: 10px;
+                }
+                &:after {
+                    transform: rotate(145deg);
+                    top: -10px;
+                    left: 10px;
+                }
+            }
+        }
+
+        .c-title__thirdcolor {
+            @extend .c-title__maincolor;
+            color: $thirdcolor;
+            .inner {
+                &:before,
+                &:after {
+                    border-color: $thirdcolor;
+                }
+            }
+        }
+
+        .c-title__forcecolor {
+            @extend .c-title__maincolor;
+            color: $forcecolor;
+            .inner {
+                &:before,
+                &:after {
+                    border-color: $forcecolor;
+                }
+            }
+        }
+
+        .c-title__fifthcolor {
+            @extend .c-title__maincolor;
+            color: $fifthcolor;
+            .inner {
+                &:before,
+                &:after {
+                    border-color: $fifthcolor;
+                }
+            }
+        }
+
+        .c-title__left {
+            font-size: $large;
+            color: $maincolor;
+            line-height: 1.6;
+            @extend .webfont-title;
+            @media screen and (max-width: $bp-xsmall) {
+                font-size: $middle;
+            }
+        }
+
+        .c-title__under {
+            font-size: $middle;
+            @extend .webfont-bold;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dotted $black;
+            //  @media screen and (max-width: $bp-small) {
+            //      font-size: $middle;
+            //  }
+        }
+
+        // .c-title__tab {
+        //     @extend .webfont-title;
+        //     font-size: $xx-large;
+        //     width: 50%;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     height: 5rem;
+        //     &.web {
+        //         background-color: $pink;
+        //     }
+        //     &.it {
+        //         background-color: $blue;
+        //     }
+        // }
+        // .c-title__top-web {
+        //     @extend .c-title;
+        //     text-align: right;
+        //     @media screen and (max-width: $bp-small) {
+        //         width: 100%;
+        //         padding-top: 1.3rem;
+        //         padding-bottom: 1.3rem;
+        //         text-align: center;
+        //         font-size: $large;
+        //         height: 6rem;
+        //     }
+        // }
+        // .c-title__top-it {
+        //     @extend .c-title__top-web;
+        //     text-align: left;
+        //     // position: relative;
+        //     @media screen and (max-width: $bp-small) {
+        //         text-align: center;
+        //     }
+        // }
+        // .c-title__top-and {
+        //     @extend .c-title;
+        //     text-align: right;
+        //     right: 48.9%;
+        //     top: 4.2rem;
+        //     z-index: 10;
+        //     position: absolute;
+        //     @media screen and (max-width: $bp-middle) {
+        //         right: 48.3%;
+        //         top: 4.1rem;
+        //     }
+        //     @media screen and (max-width: $bp-small) {
+        //         display: none;
+        //     }

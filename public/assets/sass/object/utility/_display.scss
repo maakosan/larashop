@@ -1,0 +1,34 @@
+.u-sm {
+    display: none !important;
+    @media screen and (max-width: $bp-small) {
+        display: block !important;
+    }
+}
+
+.u-md {
+    display: none !important;
+    @media screen and (max-width: $bp-middle) {
+        display: block !important;
+    }
+}
+
+.u-lg {
+    display: block !important;
+    @media screen and (max-width: $bp-middle) {
+        display: none !important;
+    }
+}
+
+.u-sp__none {
+    display: block;
+    @media screen and (max-width: $bp-small) {
+        display: none !important;
+    }
+}
+
+.u-sp__none-inline {
+    display: inline;
+    @media screen and (max-width: $bp-small) {
+        display: none !important;
+    }
+}

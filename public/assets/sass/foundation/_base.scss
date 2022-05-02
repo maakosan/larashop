@@ -1,0 +1,110 @@
+/* ==========================================================================
+   基本設計Foundation
+========================================================================== */
+
+
+/* Base
+   ----------------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    font-size: 16px;
+    font-size: 62.5%;
+    height: 100%;
+    height: auto;
+}
+
+body {
+    height: 100%;
+    // background-color: $lightgray2;
+    margin: 0;
+    @extend .webfont;
+    @include rem(font-size, 1.5rem);
+    width: 100%;
+    text-align: left;
+    color: $black;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+        transition: all .3s ease;
+    }
+    img {
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+            transition: all .3s ease;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width/***/
+    : auto;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: $black;
+}
+
+p {
+    line-height: 1.6;
+}
+
+[type="button"] {
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+audio,
+canvas,
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+svg {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+input[type="button"],
+input[type="text"],
+input[type="submit"],
+input[type="image"],
+textarea {
+    border-radius: 0;
+}

@@ -1,0 +1,5 @@
+.c-current {
+    @extend .webfont-title;
+    padding: 0 0 0.3rem 0 !important;
+    border-bottom: 1px dashed $black !important;
+}

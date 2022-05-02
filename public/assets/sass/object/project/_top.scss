@@ -1,0 +1,105 @@
+.p-top__bunner {
+    padding-bottom: 1rem;
+    background-color: $white;
+    width: 100%;
+    height: 100%;
+}
+
+.p-top__info {
+    border: 2px solid $maincolor;
+    padding: 3rem;
+    position: relative;
+    z-index: 20;
+    @media screen and (max-width: $bp-small) {
+        border: none;
+        padding: 0;
+    }
+}
+
+.p-top__info-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: $bp-small) {
+        flex-flow: column;
+    }
+}
+
+.p-top__info-title {
+    order: 1;
+    width: calc(100% - 15rem);
+    margin-bottom: 1.5rem;
+    font-size: $large;
+    color: $maincolor;
+    line-height: 1.6;
+    @extend .webfont-title;
+    @media screen and (max-width: $bp-small) {
+        margin-bottom: 1rem;
+        width: 100%;
+        @media screen and (max-width: $bp-small) {
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+    }
+}
+
+.p-top__info-button {
+    order: 2;
+    width: 15rem;
+    margin-bottom: 1.5rem;
+    a {
+        font-size: $small;
+        color: $white;
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: $maincolor;
+        @media screen and (max-width: $bp-small) {
+            padding: 1rem 1.5rem;
+            font-size: $middle;
+        }
+    }
+    @media screen and (max-width: $bp-small) {
+        order: 3;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.p-top__crip {
+    width: 80%;
+    position: absolute;
+    top: -22px;
+    left: 35px;
+    i {
+        font-size: 3.6rem;
+        color: $lightpink2;
+    }
+    @media screen and (max-width: $bp-small) {
+        display: none;
+    }
+}
+
+.p-top__info-list {
+    width: 100%;
+    order: 3;
+    @media screen and (max-width: $bp-small) {
+        order: 2;
+        margin-bottom: 2rem;
+    }
+    li {
+        border-bottom: 1px dotted $maincolor;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .day {
+            font-size: $small;
+            padding-right: 0.5rem;
+        }
+    }
+}

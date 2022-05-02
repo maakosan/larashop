@@ -1,0 +1,341 @@
+                                                                .l-footer {
+                                                                    width: 100%;
+                                                                }
+
+                                                                .l-footer__product {
+                                                                    padding: 5rem;
+                                                                    text-align: center;
+                                                                    @media screen and (max-width: $bp-small) {
+                                                                        padding: 3rem 1rem;
+                                                                    }
+                                                                }
+
+                                                                .l-footer__text {
+                                                                    text-align: center;
+                                                                    color: $maincolor;
+                                                                    font-size: $large;
+                                                                    padding-bottom: 2rem;
+                                                                    @extend .webfont-title;
+                                                                    @media screen and (max-width: $bp-small) {
+                                                                        font-size: $middle;
+                                                                    }
+                                                                    .inner {
+                                                                        position: relative;
+                                                                        display: inline-block;
+                                                                        padding: 0 2em;
+                                                                        text-align: center;
+                                                                        &:before,
+                                                                        &:after {
+                                                                            position: absolute;
+                                                                            width: 0;
+                                                                            height: 51.95px;
+                                                                            content: '';
+                                                                            border-width: 0 0 0 2px;
+                                                                            border-style: dotted;
+                                                                            border-color: $maincolor;
+                                                                        }
+                                                                        &:before {
+                                                                            transform: rotate(35deg);
+                                                                            top: -10px;
+                                                                            right: 10px;
+                                                                        }
+                                                                        &:after {
+                                                                            transform: rotate(145deg);
+                                                                            top: -10px;
+                                                                            left: 10px;
+                                                                        }
+                                                                    }
+                                                                }
+
+                                                                .l-footer__list {
+                                                                    text-align: center;
+                                                                    padding-top: 3rem;
+                                                                    padding-bottom: 3rem;
+                                                                    line-height: 1.5;
+                                                                    font-size: $small;
+                                                                    @media screen and (max-width: $bp-small) {
+                                                                        line-height: 2;
+                                                                    }
+                                                                    li {
+                                                                        display: inline-block;
+                                                                        padding-right: 0.5rem;
+                                                                        border-right: 1px solid $black;
+                                                                        padding-left: 0.5rem;
+                                                                        height: 2rem;
+                                                                        @media screen and (max-width: $bp-small) {
+                                                                            height: 2.4rem;
+                                                                            border-right: none;
+                                                                            padding-right: 0;
+                                                                        }
+                                                                        &:first-child {
+                                                                            font-weight: bold;
+                                                                            font-size: $middle;
+                                                                            border-right: none;
+                                                                            line-height: 1.5;
+                                                                            @media screen and (max-width: $bp-small) {
+                                                                                display: block;
+                                                                                margin-bottom: 1rem;
+                                                                                // &:before,
+                                                                                // &:after {
+                                                                                //     font-family: "Font Awesome 5 Free";
+                                                                                //     content: "\f069";
+                                                                                //     font-size: 9px;
+                                                                                //     padding: 4px;
+                                                                                // }
+                                                                            }
+                                                                        }
+                                                                        &:last-child {
+                                                                            border-right: none;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                
+                                                                .l-footer__guide {
+                                                                    padding: 5rem;
+                                                                    @media screen and (max-width: $bp-small) {
+                                                                        padding: 3rem 2rem 2rem;
+                                                                    }
+                                                                }
+
+                                                                .l-footer__guide-head {
+                                                                    background-color: $maincolor;
+                                                                    padding: 1rem;
+                                                                    font-size: $large;
+                                                                    color: $white;
+                                                                    @extend .webfont-title;
+                                                                    @media screen and (max-width: $bp-small) {
+                                                                        background-color: initial;
+                                                                        font-size: $large;
+                                                                        color: $maincolor;
+                                                                        padding: 0;
+                                                                        padding-bottom: 2rem;
+                                                                    }
+                                                                }
+
+                                                                .l-footer__guide-content {
+                                                                    border: 1px solid $maincolor;
+                                                                    padding: 3rem;
+                                                                    @media screen and (max-width: $bp-small) {
+                                                                        border: none;
+                                                                        padding: 0;
+                                                                    }
+                                                                }
+
+                                                                .l-footer__sns {
+                                                                    text-align: center;
+                                                                    padding-bottom: 5rem;
+                                                                    li {
+                                                                        font-size: $x-large;
+                                                                        display: inline-block;
+                                                                        padding-right: 2rem;
+                                                                        &:last-child {
+                                                                            padding-right: 0;
+                                                                        }
+                                                                        &:first-child {
+                                                                            font-size: $small;
+                                                                        }
+                                                                        &.twitter {
+                                                                            // color: $blue;
+                                                                        }
+                                                                        &.facebook {
+                                                                            // color: $darkblue;
+                                                                        }
+                                                                        &.mail {
+                                                                            // color: $lightblue;
+                                                                        }
+                                                                    }
+                                                                    @media screen and (max-width: $bp-small) {
+                                                                        padding-bottom: 3rem;
+                                                                    }
+                                                                }
+                                                                
+                                                                .l-footer__menu {
+                                                                    display: flex;
+                                                                    padding: 5rem;
+                                                                    background-color: $lightgray;
+                                                                    width: 100%;
+                                                                    @media screen and (max-width: $bp-middle) {
+                                                                        flex-flow: column;
+                                                                        flex-flow: column-reverse;
+                                                                        padding-bottom: 0.5rem;
+                                                                    }
+                                                                    @media screen and (max-width: $bp-small) {
+                                                                        padding: 2rem;
+                                                                        padding-bottom: 0.5rem;
+                                                                    }
+                                                                }
+                                                                
+                                                                .l-footer__menu-left {
+                                                                    width: 50%;
+                                                                    padding-left: 1.5rem;
+                                                                    @media screen and (max-width: $bp-middle) {
+                                                                        width: 100%;
+                                                                        padding-left: 0;
+                                                                    }
+                                                                }
+
+                                                                .l-footer__menu-right {
+                                                                    width: 50%;
+                                                                    padding-right: 1.5rem;
+                                                                    @media screen and (max-width: $bp-middle) {
+                                                                        width: 100%;
+                                                                        padding-right: 0;
+                                                                    }
+                                                                }
+                                                                
+                                                                .l-footer__company {
+                                                                    @extend .webfont-title;
+                                                                    padding-right: 2rem;
+                                                                    padding-bottom: 0.8rem;
+                                                                    @media screen and (max-width: $bp-middle) {
+                                                                        font-size: $x-large;
+                                                                        text-align: center;
+                                                                        padding-bottom: 2rem;
+                                                                    }
+                                                                }
+                                                                
+                                                                .l-footer__name {
+                                                                    @extend .webfont-title;
+                                                                    font-size: $large;
+                                                                    padding-bottom: 0.3rem;
+                                                                }
+                                                                
+                                                                .l-footer__tel {
+                                                                    @extend .webfont-title;
+                                                                    i {
+                                                                        padding-right: 0.3rem;
+                                                                    }
+                                                                }
+                                                                
+                                                                .l-footer__copylight {
+                                                                    font-size: $small;
+                                                                    color: $darkgray;
+                                                                    line-height: 1.5;
+                                                                    @media screen and (max-width: $bp-middle) {
+                                                                        font-size: $small;
+                                                                        text-align: center;
+                                                                        padding-bottom: 0.5rem;
+                                                                    }
+                                                                }
+
+                                                                .l-footer__menu-contentlink {
+                                                                    text-align: right;
+                                                                    font-size: $small;
+                                                                    line-height: 1.5;
+                                                                    padding: 1rem;
+                                                                    padding-bottom: 1rem;
+                                                                    li {
+                                                                        display: inline-block;
+                                                                        padding-right: 1rem;
+                                                                        line-height: 1.9;
+                                                                        &:last-child {
+                                                                            padding-right: 0
+                                                                        }
+                                                                    }
+                                                                    @media screen and (max-width: $bp-middle) {
+                                                                        text-align: center;
+                                                                        font-size: $middle;
+                                                                        border-bottom: 1px dotted $white;
+                                                                    }
+                                                                }
+
+                                                                .l-footer__menu-infolink {
+                                                                    @extend .l-footer__menu-contentlink;
+                                                                    padding-bottom: 0;
+                                                                    @media screen and (max-width: $bp-middle) {
+                                                                        text-align: center;
+                                                                        font-size: $small;
+                                                                        padding-bottom: 1rem;
+                                                                        border-bottom: none;
+                                                                        margin-bottom: none;
+                                                                    }
+                                                                }
+
+                                                                // .l-footer__menu-list {
+                                                                //     display: flex;
+                                                                //     @media screen and (max-width: $bp-middle) {
+                                                                //         justify-content: center;
+                                                                //         align-items: center;
+                                                                //         margin-bottom: 1rem;
+                                                                //     }
+                                                                //     @media screen and (max-width: $bp-small) {
+                                                                //         flex-flow: column;
+                                                                //         padding: 3rem 2rem 0;
+                                                                //         margin-bottom: 0;
+                                                                //     }
+                                                                // }
+                                                                // .l-footer__main-menu,
+                                                                // .l-footer__sub-menu,
+                                                                // .l-footer__follow-menu {
+                                                                //     padding-right: 1rem;
+                                                                //     .icon {
+                                                                //         font-size: $middle;
+                                                                //     }
+                                                                //     @media screen and (max-width: $bp-middle) {
+                                                                //         display: flex;
+                                                                //         flex-wrap: nowrap;
+                                                                //     }
+                                                                //     @media screen and (max-width: $bp-small) {
+                                                                //         margin: 0 auto 3rem;
+                                                                //         .icon {
+                                                                //             font-size: $x-large;
+                                                                //         }
+                                                                //     }
+                                                                //     li {
+                                                                //         display: inline-block;
+                                                                //         padding-right: 1rem;
+                                                                //         @media screen and (max-width: $bp-small) {
+                                                                //             padding-right: 2rem;
+                                                                //             font-size: $small;
+                                                                //         }
+                                                                //         @media screen and (max-width: $bp-xsmall) {
+                                                                //             padding-right: 2rem;
+                                                                //         }
+                                                                //         &:first-child {
+                                                                //             padding-left: 1rem;
+                                                                //         }
+                                                                //         &:last-child {
+                                                                //             padding-right: 0;
+                                                                //         }
+                                                                //     }
+                                                                //     .l-footer__follow-me {
+                                                                //         display: none;
+                                                                //     }
+                                                                // }
+                                                                // .l-footer__title {
+                                                                //     @extend .webfont-en;
+                                                                //     display: none;
+                                                                //     @media screen and (max-width: $bp-small) {
+                                                                //         display: flex;
+                                                                //         font-size: $middle;
+                                                                //         display: flex;
+                                                                //         align-items: center;
+                                                                //         margin-bottom: 2rem;
+                                                                //         width: 100%;
+                                                                //         &::after {
+                                                                //             margin-left: 1rem;
+                                                                //             border-top: 1px solid $white;
+                                                                //             content: "";
+                                                                //             flex-grow: 1;
+                                                                //         }
+                                                                //     }
+                                                                // }
+                                                                // .l-footer__address {
+                                                                //     font-size: $small;
+                                                                //     display: inline;
+                                                                //     padding-top: 0.3em;
+                                                                //     padding-right: 1rem;
+                                                                //     white-space: nowrap;
+                                                                //     @media screen and (max-width: $bp-middle) {
+                                                                //         width: 100%;
+                                                                //         text-align: center;
+                                                                //     }
+                                                                //     @media screen and (max-width: $bp-small) {
+                                                                //         margin: 0 auto;
+                                                                //         background-color: $white;
+                                                                //         color: $black;
+                                                                //         width: 100%;
+                                                                //         text-align: center;
+                                                                //     }
+                                                                // }   }
+                                                                // }
