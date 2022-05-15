@@ -12,11 +12,9 @@
 <ul class="c-pan">
     <li><a href="{{url('/')}}">ホーム</a></li>
         <li>
-
 商品ラインナップ
         </li>
 </ul>
-
                         <section>
 
 
@@ -29,8 +27,8 @@
                                     <ul class="p-archive__category">
                                         <li class="active"><a href="{{url('/product')}}">全商品</a></li>
                                         @foreach($cates as $cate)
-                                            <li>
-                                                <a href="{{url('/category')}}{{('/')}}{{$cate->categoryslug}}">
+                                        <li>
+                                        <a href="{{url('/category')}}{{('/')}}{{$cate->categoryslug}}">
                                           {{$cate->categoryname}}</a>
                                         </li>
                                          @endforeach

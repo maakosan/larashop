@@ -9,15 +9,17 @@
                 @foreach($pickups as $pickup)
                 @if ($loop->index < 4)
                     <li class="c-card__column__4row box">
-                        <a href="{{ url('/product')}}{{'/'}}{{($pickup->id)}}" class="c-card__hover">
-                        <img class="c-card__image" src="{{asset($pickup->mainimage)}}" alt="{{$pickup->name}}">
-                        <p class="c-card__title">
+                        <a href="{{ url('/product')}}{{'/'}}{{($pickup->id)}}">
+                            <span class="c-card__hover">
+                            <img class="c-card__image" src="{{asset($pickup->mainimage)}}" alt="{{$pickup->name}}">
+                            </span>
+                            <p class="c-card__title">
                             {{$pickup->name}}
-                        </p>
-                        <p class="c-card__price">
+                            </p>
+                            <p class="c-card__price">
                             {{number_format($pickup->price)}}
                             <span class="yen">円</span>
-                        </p>
+                            </p>
                         </a>
                     </li>
                 @endif

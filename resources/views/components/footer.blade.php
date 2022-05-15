@@ -128,7 +128,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer">
 <script src="{{ asset('js/app.js') }}" defer></script>
-<script src="{{ asset('/assets/js/main.js') }}"></script>
+<script src="{{ asset('/assets/js/main.min.js') }}"></script>
 @yield('page-js')
 </body>
 <div id="js-pagetop" class="c-botton__pagetop">

@@ -16,10 +16,11 @@
 商品検索
         </li>
 </ul>
-<section>
+
 <h1 class="c-title">
 商品検索
 </h1>
+<section>
 <div class="c-card__search-wrap u-mb__20">
 @include('components/parts-search')
 </div>
@@ -39,7 +40,7 @@
   <div class="p-archive__list">
 
 
- <ul class="c-card__row js-delayScrollHead">
+ <ul class="c-card__row">
 
    @foreach ($matchs as $product)
 @include('components/parts-product-list')

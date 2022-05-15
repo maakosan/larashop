@@ -34,9 +34,9 @@
 
 <div class="swiper-container">
   <div class="swiper-wrapper">
-   <div class="swiper-slide"><a href="{{ url('/') }}"><img src="{{ asset('assets/image/mainbunner1.jpg') }}" alt="{{config('app.name','Laravel')}}"></a></div>
-    <div class="swiper-slide"><a href="{{ url('/') }}"><img src="{{ asset('assets/image/mainbunner2.jpg') }}" alt="{{config('app.name','Laravel')}}"></a></div>
-    <div class="swiper-slide"><a href="{{ url('/') }}"><img src="{{ asset('assets/image/mainbunner3.jpg') }}" alt="{{config('app.name','Laravel')}}"></a></div>
+   <div class="swiper-slide"><a href="{{ url('/product') }}"><img src="{{ asset('assets/image/mainbunner1.jpg') }}" alt="{{config('app.name','Laravel')}}"></a></div>
+    <div class="swiper-slide"><a href="{{ url('/news/1') }}"><img src="{{ asset('assets/image/mainbunner2.jpg') }}" alt="{{config('app.name','Laravel')}}"></a></div>
+    <div class="swiper-slide"><a href="{{ url('/news/2') }}"><img src="{{ asset('assets/image/mainbunner3.jpg') }}" alt="{{config('app.name','Laravel')}}"></a></div>
   </div>
 </div>
 </div>

@@ -167,8 +167,8 @@ mainSwiper.on('slideChange',()=>{
                                                     </li>
                                                     <li class="p-product__price">販売価格:
                                                             <span class="text">{{number_format($products->price)}}</span><span class="yen">円</span></li>
-                                                </ul>
-
+                                            </ul>
+                                     >
                                                     @if($products->stock<1)
                                                         <p class="u-text__center u-text__red">欠品中</p>
 
@@ -179,20 +179,16 @@ mainSwiper.on('slideChange',()=>{
                                     <form method="POST" action="{{ route('line_item.create') }}">
                                     @csrf
                                     <input type="hidden" name="id" value="{{ $products->id }}"/>
- <div class="p-product__quantity"><span class="u-pr__3">購入数</span>
+                                    <div class="p-product__quantity"><span class="u-pr__3">購入数</span>
     <input type="number" name="quantity" min="1" value="1" max="10" step="1" autocomplete="off" require/></div>
 
-                                {{-- </div> --}}
- <button type="submit" class="c-button__cart slide-in u-a-downAnime"><span class="fa fa-shopping-cart"></span>カートに入れる</button>
+ <button type="submit" class="c-button__cart slide-in"><span class="fa fa-shopping-cart"></span>カートに入れる</button>
  </div>
 
 </form>
-@endif                                                </div>
-
-                                                        </div>
-
-                                                </div>
-
+@endif
+                                      </div>
+                                    </div>
                                     </div>
                         </section>
 

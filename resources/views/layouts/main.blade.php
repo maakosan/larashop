@@ -1,5 +1,5 @@
 @include('components.header')
-<main class="l-main">
+<main class="l-main fadein">
 
     @yield('content')
 

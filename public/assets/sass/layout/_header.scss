@@ -17,7 +17,7 @@
                                                     height: 5rem;
                                                 }
                                             }
-                                            
+
                                             .l-header__insert {
                                                 display: none;
                                                 position: fixed;
@@ -45,7 +45,7 @@
                                                     }
                                                 }
                                             }
-                                            
+
                                             .l-header__search {
                                                 position: fixed;
                                                 max-width: $bp-large;
@@ -56,7 +56,7 @@
                                                     top: 5.5rem;
                                                 }
                                             }
-                                            
+
                                             .l-header__logo {
                                                 padding: 1.4rem;
                                                 @media screen and (max-width: $bp-small) {
@@ -74,13 +74,13 @@
                                                     }
                                                 }
                                             }
-                                            
+
                                             .l-header__nav {
                                                 // width: 100%;
                                                 display: inline-flex;
                                                 justify-content: center;
                                             }
-                                            
+
                                             .l-header__nav-menu {
                                                 // width: 100%;
                                                 font-size: 1.3rem;
@@ -89,14 +89,18 @@
                                                 justify-content: center;
                                                 align-items: center;
                                                 li {
+                                                    padding: 0;
                                                     a {
-                                                        // width: 100%;
+                                                        position: relative; // width: 100%;
                                                         margin-right: 0rem;
-                                                        padding: 3rem 1rem;
+                                                        padding-bottom: 1rem;
                                                         display: inline;
                                                         // display: flex;
                                                         // justify-content: center;
                                                         // align-items: center;
+                                                        &:hover {
+                                                            color: $darkpink;
+                                                        }
                                                         &.border {
                                                             padding: 3rem 0.1rem 1.3rem 0;
                                                             margin-left: 0.9rem;
@@ -156,7 +160,7 @@
                                                     display: none;
                                                 }
                                             }
-                                            
+
                                             .l-header__bar-menu {
                                                 @media screen and (max-width: $bp-middle) {
                                                     display: flex;
@@ -189,7 +193,7 @@
                                                     top: 5rem;
                                                 }
                                             }
-                                            
+
                                             .l-header__bar {
                                                 span {
                                                     position: absolute;
@@ -261,7 +265,7 @@
                                                     }
                                                 }
                                             }
-                                            
+
                                             .l-header__nav-btn {
                                                 // width: 100%;
                                                 height: 5.5rem;
@@ -288,7 +292,7 @@
                                                     padding-bottom: 2.3rem;
                                                     &.cart,
                                                     &.login {
-                                                        width: 16rem;
+                                                        width: 15rem;
                                                         height: 5.5rem;
                                                         margin-right: 0;
                                                         i {
@@ -296,22 +300,22 @@
                                                         }
                                                         a {
                                                             color: $white;
-                                                            width: 16rem;
+                                                            width: 15rem;
                                                             height: 5.5rem;
                                                             display: flex;
                                                             justify-content: center;
                                                             align-items: center;
                                                             &:hover {
-                                                                opacity: 0.4;
+                                                                background-color: $white;
                                                             }
                                                         }
                                                         .text {
                                                             padding-left: 0.3rem;
                                                         }
                                                         @media screen and (max-width: $bp-middle) {
-                                                            width: 15rem;
+                                                            width: 14rem;
                                                             a {
-                                                                width: 15rem;
+                                                                width: 14rem;
                                                             }
                                                         }
                                                         @media screen and (max-width: $bp-small) {
@@ -362,6 +366,13 @@
                                                         }
                                                         &.cart {
                                                             background-color: $lightpink2;
+                                                            a {
+                                                                border: 2px solid $lightpink2;
+                                                                &:hover {
+                                                                    color: $pink;
+                                                                    // border: 1px solid $lightpink2;
+                                                                }
+                                                            }
                                                             i {
                                                                 position: relative;
                                                             }
@@ -398,6 +409,13 @@
                                                         }
                                                         &.login {
                                                             background-color: $maindark;
+                                                            a {
+                                                                border: 2px solid $maindark;
+                                                                &:hover {
+                                                                    color: $maindark;
+                                                                    // border: 1px solid $lightpink2;
+                                                                }
+                                                            }
                                                             @media screen and (max-width: $bp-small) {
                                                                 padding-bottom: none;
                                                                 .fas {

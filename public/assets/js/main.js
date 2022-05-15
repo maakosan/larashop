@@ -263,7 +263,7 @@ $(function() {
 
 
     function delayScrollAnime() {
-        var time = 0.3; //遅延時間を増やす秒数の値
+        var time = 0.5; //遅延時間を増やす秒数の値
         var value = time;
         $('.delayScroll').each(function() {
             var parent = this; //親要素を取得

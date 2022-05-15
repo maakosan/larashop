@@ -8,7 +8,7 @@
 <div class="l-main__container">
 
 <main>
-                <div class="l-main__aria">
+<div class="l-main__aria">
 <ul class="c-pan">
     <li><a href="{{url('/')}}">ホーム</a></li>
         <li>
@@ -64,14 +64,11 @@
                                     </li>
                                 </ul>
                             </div> --}}
-   <div class="p-archive__list">
-
+                            <div class="p-archive__list">
                                 <ul class="c-card__row js-delayScrollHead">
-
-                                        @foreach($products as $product)
-                          @include('components/parts-product-list')
+                                @foreach($products as $product)
+                                @include('components/parts-product-list')
                                 @endforeach
-
                                 </ul>
                             </div>
 

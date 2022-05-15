@@ -2,6 +2,23 @@
    Layoutレイアウト
    ========================================================================== */
 
+.l-main {
+    &.fadein {
+        animation-name: fadeInAnime;
+        animation-duration: 1.3s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+    @keyframes fadeInAnime {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
 .l-main__aria {
     padding: 7rem;
     padding-top: 10rem;
@@ -568,5 +585,7 @@
 // .l-main__arcive-tab {
 //     width: 100%;
 //     display: flex;
+//     height: 5rem;
+// }   display: flex;
 //     height: 5rem;
 // }

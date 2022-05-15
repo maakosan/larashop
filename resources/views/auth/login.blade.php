@@ -6,22 +6,21 @@
 
 @section('content')
 <div class="l-main__container">
- <section>
-                             <main>
 
+            <main>
                 <div class="l-main__aria">
                  <ul class="c-pan">
-    <li><a href="{{url('/')}}">ホーム</a></li>
-        <li>ログイン
-        </li>
-</ul>
+                    <li><a href="{{url('/')}}">ホーム</a></li>
+                    <li>ログイン
+                    </li>
+                </ul>
                          <h1 class="c-title">
                             ログイン</h1>
-
+        v
                         <form method="POST" action="{{ route('login') }}">
                         @csrf
 
- <table class="p-contact__form-table">
+        <table class="p-contact__form-table">
                             <tr>
                                 <td class="back"><label for="email">{{ __('メールアドレス') }}</label></td>
                             <td>
@@ -57,7 +56,7 @@
                                     <label for="remember" class="checkbox-color">
                                         {{ __('パスワードを記録する') }}
                                     </label>
-                        <div class="p-contact__add-wrap">
+                        {{-- <div class="p-contact__add-wrap">
                             @if (Route::has('register'))
                                 <div class="p-contact__forget">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('会員登録する') }}</a>
@@ -69,11 +68,12 @@
                                         {{ __('パスワードをお忘れですか?') }}
                                     </a>
                                 @endif
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     </form>
-                </div>
+                </table>
+            </section>
             </main>
 </div>
 @endsection

@@ -3,7 +3,9 @@
                                         <li class="p-archive__column">
                                             <div class="image">
                                                 <a href="{{url('/product')}}{{('/')}}{{($product->id)}}" class="c-card__image">
+                                                    <span class="c-card__hover">
                                                     <img src="{{asset($product->mainimage)}}">
+                                                    </span>
                                                 </a>
                                             </div>
 
