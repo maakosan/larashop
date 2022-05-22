@@ -66,7 +66,7 @@ mainSwiper.on('slideChange',()=>{
 @section('content')
 <div class="l-main__container">
 <section>
-<main>
+
 <div class="l-main__aria">
 <ul class="c-pan">
     <li><a href="{{url('/')}}">ホーム</a></li>
@@ -196,6 +196,6 @@ mainSwiper.on('slideChange',()=>{
                                     </div>
 
                                    @include('components/parts-item-pickup')
-            </main>
+
 </div>
 @endsection

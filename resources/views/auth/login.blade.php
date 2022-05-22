@@ -7,7 +7,7 @@
 @section('content')
 <div class="l-main__container">
 
-            <main>
+
                 <div class="l-main__aria">
                  <ul class="c-pan">
                     <li><a href="{{url('/')}}">ホーム</a></li>
@@ -16,7 +16,6 @@
                 </ul>
                          <h1 class="c-title">
                             ログイン</h1>
-        v
                         <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -74,6 +73,6 @@
                     </form>
                 </table>
             </section>
-            </main>
+
 </div>
 @endsection

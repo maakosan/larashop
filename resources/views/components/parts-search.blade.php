@@ -2,7 +2,7 @@
                     <div class="c-card__search">
                         <div class="c-card__search__list-button">
                         <div id="js-cate__search" class="main"><span>カテゴリ</span><span class="u-sp__none">から探す</span>
-                            <span class="icon"><i id="js-cate__search-icon" class="fas fa-angle-down"></span></i>
+                            <span class="icon"><i id="js-cate__search-icon" class="fas fa-angle-down"></i></span>
                         </div>
                         </div>
                         <form action="{{url('/search')}}" method="GET" class="c-card__search-form">

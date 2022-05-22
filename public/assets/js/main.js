@@ -28,7 +28,7 @@ $(function() {
         function() {
             $(this).toggleClass('active');
             // $(".l-header__nav-menu").toggleClass('active');
-            $(".l-header__nav-menu").slideToggle();
+            $("#js-headmenu").slideToggle();
         });
 
 
@@ -37,9 +37,9 @@ $(function() {
         var winW = $(window).width();
         var devW = 959;
         if (winW <= devW) {
-            $(".l-header__nav-menu").hide();
+            $("#js-headmenu").hide();
         } else {
-            $(".l-header__nav-menu").show();
+            $("#js-headmenu").show();
             $('.l-header__bar').removeClass('active');
         }
     });

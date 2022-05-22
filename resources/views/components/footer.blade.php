@@ -1,5 +1,5 @@
 <footer class="l-footer">
-<section>
+<div>
     <hr class="c-border__2color">
     <div class="l-footer__product">
         <p class="l-footer__text slide-in u-a-downAnime"><span class="inner">欲しいものが、きっと見つかる</span></p>
@@ -20,7 +20,7 @@
         <div class="c-button__simple"><a href="{{ url('/page') }}">お問い合わせ</a></div>
     </div>
     <hr class="c-border__2color">
-</section>
+</div>
 <section class="l-footer__guide">
 
     <div class="l-footer__guide-head">
@@ -72,19 +72,18 @@
                 </div>
             </div>
         </div>
-
-
+    </div>
 </section>
-<section>
+<div>
     <ul class="l-footer__sns">
         <li>Share</li>
-        <li class="twitter"><a id="sns_tw" href="" target="_blank"><i class="fab fa-twitter" alt="Twitterでツイート"></i></a></li>
-        <li class="facebook"><a id="sns_fb" href="" target="_blank"><i class="fab fa-facebook-f" alt="Facebookでシェア"></i></a></li>
-        <li class="mail"><a id="sns_mail" href="" target="_blank"><i class="fas fa-envelope-square" alt="メールで友だちに送る"></i></a></li>
+        <li class="twitter"><a id="sns_tw" href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li class="facebook"><a id="sns_fb" href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="mail"><a id="sns_mail" href="" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
     </ul>
-</section>
+</div>
 
-<section class="l-footer__menu">
+<div class="l-footer__menu">
     <div class="l-footer__menu-left">
         <p class="l-footer__company">
            {{config('app.name','Laravel')}}
@@ -93,8 +92,7 @@
     </div>
     <div class="l-footer__menu-right">
         <ul class="l-footer__menu-contentlink">
-<ul class="l-header__nav-menu">
-                    </ul>
+
             <li><a href="{{ url('/product') }}">商品ラインナップ</a></li>
                         <li><a href="{{ url('/page') }}">ご利用ガイド</a></li>
                         <li><a href="{{ url('/page') }}">お問い合わせ</a></li>
@@ -120,19 +118,20 @@
                     <li><a href="{{ url('/page') }}">特定商取引法表示</a></li>
         </ul>
     </div>
-</section>
+</div>
 </footer>
 
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer">
-<script src="{{ asset('js/app.js') }}" defer></script>
-<script src="{{ asset('/assets/js/main.min.js') }}"></script>
-@yield('page-js')
-</body>
 <div id="js-pagetop" class="c-botton__pagetop">
     <a href="#"><i class="fas fa-angle-up"></i></a>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+<script src="{{ asset('js/app.js') }}" defer></script>
+<script src="{{ asset('/assets/js/main.min.js') }}"></script>
+@yield('page-js')
+
+</body>
+
 
 </html>

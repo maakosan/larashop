@@ -27,10 +27,10 @@
 
 @section('content')
 <div class="l-main__container">
-    <main class="l-main__aria-top">
+
+        <div class="l-main__aria-top">
 
                 <div class="p-top__bunner">
-
 
 <div class="swiper-container">
   <div class="swiper-wrapper">
@@ -46,7 +46,8 @@
 
                 <div class="c-card__search-wrap">
 @include('components/parts-search')
-                </div></div>
+                </div>
+</div>
                         <section class="l-main__white">
                         <div class="l-main__content">
                             <div class="p-top__info">
@@ -75,6 +76,7 @@
                         </section>
                         @include('components/parts-item-new')
                         @include('components/parts-item-pickup')
-    </main>
+                    </div>
+</div>
 </div>
 @endsection

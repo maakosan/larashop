@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title')|{{config('app.name','Laravel')}}</title>
     <link rel="shortcut icon" type="image/ico" href="{{ asset('/assets/image/favicon.ico') }}">
-    <meta name="description" itemprop="description" content="@yield('excerpt')">
+    <meta name="description" content="@yield('excerpt')">
     <meta property="og:type" content="website">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
@@ -31,33 +31,35 @@
                 <a href="{{ url('/') }}"><img src="{{ asset('/assets/image/logo.png') }}" alt="{{config('app.name','Laravel')}}>"></a>
             </div>
                 <nav class="l-header__nav">
-                    <ul class="l-header__nav-menu">
-                        <li><a href="{{ url('/product') }}">ラインナップ</a></li><li><a href="{{ url('/page') }}">ご利用ガイド</a></li><li><a href="{{ url('/page') }}">お問い合わせ</a></li><li><a class="border" href="{{ url('/search') }}"><i class="u-pr__3 fas fa-search"></i>商品検索</a></li>
+                    <ul id="js-headmenu" class="l-header__nav-menu">
+                        <li><a href="{{ url('/product') }}">ラインナップ</a></li>
+                        <li><a href="{{ url('/page') }}">ご利用ガイド</a></li>
+                        <li><a href="{{ url('/page') }}">お問い合わせ</a></li>
+                        <li><a class="border" href="{{ url('/search') }}"><i class="u-pr__3 fas fa-search"></i>商品検索</a></li>
                     </ul>
                     <ul class="l-header__nav-btn">
                         <li class="cart">
                             <a href="{{ url('/cart') }}">
+                                <span class="l-header__cart-wrap">
                                 <i class="fa fa-shopping-cart"></i>
-                                <span class="l-header__cart-badge"></span><span class="text">カート</span></a>
+                                <span class="l-header__cart-badge"></span><span class="text">カート</span></span></a>
                         </li>
-
- @if (Route::has('login'))
-                <div class="top-right links"><li class="login">
+                    @if (Route::has('login'))
+                        <li class="login">
+                             <span class="l-header__cart-wrap">
                     @auth
                         <a href="{{ url('/home') }}"><i class="fas fa-user-alt"></i>マイページ</a>
                     @else
                          <a href="{{ url('/login') }}"><i class="fas fa-user-alt"></i><span class="text">ログイン</span></a>
                     @endauth
-                    </li>
-                </div>
-            @endif
-            </ul>
-
+                             </span>
+                        </li>
+                    @endif
+                    </ul>
                     <div class="l-header__bar">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                 </nav>
-
 </header>

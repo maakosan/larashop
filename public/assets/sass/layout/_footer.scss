@@ -89,7 +89,7 @@
                                                                         }
                                                                     }
                                                                 }
-                                                                
+
                                                                 .l-footer__guide {
                                                                     padding: 5rem;
                                                                     @media screen and (max-width: $bp-small) {
@@ -115,6 +115,7 @@
                                                                 .l-footer__guide-content {
                                                                     border: 1px solid $maincolor;
                                                                     padding: 3rem;
+                                                                    padding-bottom: 0;
                                                                     @media screen and (max-width: $bp-small) {
                                                                         border: none;
                                                                         padding: 0;
@@ -148,7 +149,7 @@
                                                                         padding-bottom: 3rem;
                                                                     }
                                                                 }
-                                                                
+
                                                                 .l-footer__menu {
                                                                     display: flex;
                                                                     padding: 5rem;
@@ -164,7 +165,7 @@
                                                                         padding-bottom: 0.5rem;
                                                                     }
                                                                 }
-                                                                
+
                                                                 .l-footer__menu-left {
                                                                     width: 50%;
                                                                     padding-left: 1.5rem;
@@ -182,7 +183,7 @@
                                                                         padding-right: 0;
                                                                     }
                                                                 }
-                                                                
+
                                                                 .l-footer__company {
                                                                     @extend .webfont-title;
                                                                     padding-right: 2rem;
@@ -193,20 +194,20 @@
                                                                         padding-bottom: 2rem;
                                                                     }
                                                                 }
-                                                                
+
                                                                 .l-footer__name {
                                                                     @extend .webfont-title;
                                                                     font-size: $large;
                                                                     padding-bottom: 0.3rem;
                                                                 }
-                                                                
+
                                                                 .l-footer__tel {
                                                                     @extend .webfont-title;
                                                                     i {
                                                                         padding-right: 0.3rem;
                                                                     }
                                                                 }
-                                                                
+
                                                                 .l-footer__copylight {
                                                                     font-size: $small;
                                                                     color: $darkgray;

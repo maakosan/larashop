@@ -6,8 +6,7 @@
 
 @section('content')
 <div class="l-main__container">
- <section>
-                             <main>
+
 
                 <div class="l-main__aria">
                  <ul class="c-pan">
@@ -81,16 +80,11 @@
                         </div>
                             <div class="c-button__simple"><a href="javascript:history.back()">買い物を続ける</a></div>
                         </div>
-
-
-
-
                         @else
                             <p class="p-cart__item-none">ショッピングカートに商品はありません。</p>
                         @endif
                 </div>
 
-
-            </main>
+</div>
 </div>
 @endsection

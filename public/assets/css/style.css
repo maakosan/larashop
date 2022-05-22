@@ -956,7 +956,7 @@ textarea {
 .c-card__column__4row {
   width: calc(25% - 3rem);
   margin-right: 4rem;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   overflow: hidden;
 }
 
@@ -1157,7 +1157,7 @@ textarea {
 .c-card__price {
   text-align: center;
   font-size: 2.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   line-height: 1;
 }
 
@@ -1843,6 +1843,7 @@ textarea {
 .l-footer__guide-content {
   border: 1px solid #fc6dd7;
   padding: 3rem;
+  padding-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -2136,10 +2137,6 @@ textarea {
 
 .l-header__nav-menu {
   font-size: 1.3rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -2150,8 +2147,23 @@ textarea {
           align-items: center;
 }
 
+@media screen and (min-width: 959px) {
+  .l-header__nav-menu {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
 .l-header__nav-menu li {
-  padding: 0;
+  padding: 0 0.8rem;
+}
+
+@media screen and (max-width: 959px) {
+  .l-header__nav-menu li {
+    padding: 0;
+  }
 }
 
 .l-header__nav-menu li a {
@@ -2248,16 +2260,9 @@ textarea {
   }
 }
 
-@media screen and (max-width: 959px) {
-  .l-header__nav-menu {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .l-header__nav-menu {
     top: 5.5rem;
-    display: none;
   }
 }
 
@@ -2573,6 +2578,7 @@ textarea {
 
 .l-header__nav-btn li.cart.cart a, .l-header__nav-btn li.login.cart a {
   border: 2px solid #ffadea;
+  border-top: none;
 }
 
 .l-header__nav-btn li.cart.cart a:hover, .l-header__nav-btn li.login.cart a:hover {
@@ -2634,6 +2640,7 @@ textarea {
 
 .l-header__nav-btn li.cart.login a, .l-header__nav-btn li.login.login a {
   border: 2px solid #f91783;
+  border-top: none;
 }
 
 .l-header__nav-btn li.cart.login a:hover, .l-header__nav-btn li.login.login a:hover {
@@ -2785,6 +2792,12 @@ textarea {
   width: 100%;
   background-color: #ffffff;
   padding: 3rem 5rem;
+}
+
+@media screen and (max-width: 959px) {
+  .l-main__back-white, .l-main__back-cream {
+    padding: 1.5rem 5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {

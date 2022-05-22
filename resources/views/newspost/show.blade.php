@@ -17,7 +17,7 @@
 
 @section('content')
 <div class="l-main__container">
-            <main>
+
                 <div class="l-main__aria">
 <ul class="c-pan">
     <li><a href="{{url('/')}}">ホーム</a></li>
@@ -45,7 +45,7 @@
                         </div>
                     </section>
                 </div>
-            </main>
+
 
 </div>
 @endsection
