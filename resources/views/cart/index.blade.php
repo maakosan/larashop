@@ -75,9 +75,9 @@
                             {{number_format($total_price)}}<span>円</span></p>
                         </div>
 
-                        <div class="c-button__large">
-                            <a href="{{url('/page')}}" class="p-cart__cart-btn slide-in_inner u-a-downAnimeInner">購入手続きへ<i class="fas fa-lg fa-angle-right"></i></a>
-                        </div>
+                        <button class="c-button__large" onClick="location.href='{{ route('cart.checkout') }}'">
+                            <span class="p-cart__cart-btn slide-in_inner u-a-downAnimeInner">購入手続きへ<i class="fas fa-lg fa-angle-right"></i></span>
+                        </button>
                             <div class="c-button__simple"><a href="javascript:history.back()">買い物を続ける</a></div>
                         </div>
                         @else

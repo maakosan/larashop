@@ -168,7 +168,7 @@ mainSwiper.on('slideChange',()=>{
                                                     <li class="p-product__price">販売価格:
                                                             <span class="text">{{number_format($products->price)}}</span><span class="yen">円</span></li>
                                             </ul>
-                                     >
+
                                                     @if($products->stock<1)
                                                         <p class="u-text__center u-text__red">欠品中</p>
 

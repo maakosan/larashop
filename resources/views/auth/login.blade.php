@@ -55,7 +55,7 @@
                                     <label for="remember" class="checkbox-color">
                                         {{ __('パスワードを記録する') }}
                                     </label>
-                        {{-- <div class="p-contact__add-wrap">
+                        <div class="p-contact__add-wrap">
                             @if (Route::has('register'))
                                 <div class="p-contact__forget">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('会員登録する') }}</a>
@@ -67,7 +67,7 @@
                                         {{ __('パスワードをお忘れですか?') }}
                                     </a>
                                 @endif
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                     </form>

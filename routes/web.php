@@ -31,11 +31,7 @@ Route::get('/news', 'NewspostController@index')->name('newspost');
 
 Route::get('/news/{id}', 'NewspostController@show')->name('newspost.show');
 
-Route::name('product.')
-    ->group(function () {
-        Route::get('/product', 'ProductController@index')->name('product');
-        Route::get('/product/{id}', 'ProductController@show')->name('product.show');
-});
+
 
 Route::name('line_item.')
 ->group(function(){
@@ -59,11 +55,17 @@ Route::get('/', 'TopController@index')->name('top');
 
 Route::get('/', 'TopController@index')->name('top');
 
+
+Route::name('product.')
+->group(function () {
+    Route::get('/product', 'ProductController@index')->name('index');
+    Route::get('/product/{id}', 'ProductController@show')->name('product.show');
+});
+
 Route::name('cart.')
     ->group(function(){
     Route::get('/cart','CartController@index')->name('index');
+    Route::get('/cart/checkout','CartController@checkout')->name('checkout');
 });
-
-
 
 // Route::get('/', 'TopController@news')->name('news');
